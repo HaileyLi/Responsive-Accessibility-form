@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopify e-commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <h1 class="border-bottom">
+            Stay up to date with ecommerce trends with Shopify's newsletter
+        </h1>
+        <div id="email-form" class="form-fill visible">
+            <form>
+                <p class="intro-content">Subscribe for free marketing tips</p>
+                <div class="form-group">
+                    <input class="form-input" id="email-input" placeholder="Email Address" type="text">
+
+
+                    <select class="form-select">
+                        <option value="0" disabled selected hidden>Interested In ...</option>
+                        <option value="1">Marketing</option>
+                        <option value="2">Marketing</option>
+                        <option value="3">Marketing</option>
+                    </select>
+                    <div id="error" class="error-msg hidden">Please enter a valid email address</div>
+                    <br>
+                    <button class="btn form-submit" type="button" onclick="validateSubmit()">Sign up now</button>
+                </div>
+            </form>
+        </div>
+        <div id="reply-content" class="submit-succesfully hidden">
+            <h2>Thanks for subscribing</h2>
+            <p>You'll start receving free tips and resources soon.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

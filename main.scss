@@ -1,0 +1,145 @@
+// Variables
+$font: Helvetica;
+
+$white: #ffffff;
+$green: #7ab55c;
+$grey: #7b7b7b;
+$purple-light: #5c6ac4;
+$purple-dark: #000639;
+$red: #c23628;
+
+$title-font-size: 24px;
+$field-font-size: 16px;
+
+// Responsive break point
+$break-small: 600px;
+$break-large: 447px;
+
+// styles
+
+html {
+  font-family: $font;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $purple-dark;
+
+  min-width: 400px;
+}
+
+h1 {
+  padding: 20px 0;
+  color: $white;
+  line-height: 1.5;
+  text-align: left;
+  font-size: $title-font-size;
+}
+div.main-content {
+  margin: 0 auto;
+  max-width: 546px;
+
+  @media screen and (max-width: $break-small) {
+    padding: 0 40px;
+  }
+}
+.border-bottom:after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+  background-color: $green;
+  position: absolute;
+  margin: 0 auto;
+  top: 124px;
+  left: calc(50% - 276px);
+  @media screen and (max-width: $break-small) {
+    left: 40px;
+  }
+  @media screen and (max-width: $break-large) {
+    top: 156px;
+  }
+}
+.intro-content {
+  color: $white;
+  font-weight: 300;
+}
+.form-fill {
+  font-size: $field-font-size;
+  margin: 60px 0;
+}
+.form-input {
+  color: $grey;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+  font-size: $field-font-size;
+  margin-top: 13px;
+  width: 47%;
+  @media screen and (max-width: $break-small) {
+    width: calc(100% - 40px);
+  }
+}
+select {
+  font-size: $field-font-size;
+  background-color: $white;
+  border-radius: 6px;
+  display: inline-block;
+  width: 43%;
+  height: 48px;
+  border: none;
+  color: $grey;
+  margin-top: 13px;
+  padding: 0.5em 3.5em 0.5em 1em;
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
+}
+.form-select {
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, $grey 50%),
+    linear-gradient(135deg, $grey 50%, transparent 50%),
+    linear-gradient(to right, $grey, $grey);
+  background-position: calc(100% - 20px) calc(1em + 5px),
+    calc(100% - 15px) calc(1em + 5px), calc(100% - 2.5em) 12px;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+.btn {
+  border-radius: 6px;
+  border: none;
+  background-color: $purple-light;
+  color: $white;
+}
+.form-submit {
+  width: 100%;
+  padding: 12px;
+  margin-top: 13px;
+  font-size: $field-font-size;
+}
+
+.error-msg {
+  color: $red;
+  font-size: $field-font-size;
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}
+h2 {
+  color: $white;
+  font-size: $field-font-size;
+  font-weight: 800;
+}
+.submit-succesfully {
+  p {
+    color: $white;
+    font-size: $field-font-size;
+    margin-top: 0;
+  }
+}
+#reply-content {
+  margin-top: 60px;
+}
